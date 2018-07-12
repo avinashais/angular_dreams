@@ -1,0 +1,9 @@
+.outer
+{
+ float: right;;
+}
+.inner
+{
+    display: inline-block;
+    padding: 5px 5px;
+}

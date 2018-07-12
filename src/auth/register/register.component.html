@@ -1,0 +1,42 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+    <mat-card>
+        <mat-card-title>Register</mat-card-title>
+        <mat-card-subtitle>enter information to Register</mat-card-subtitle>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <input formControlName="userName" matInput placeholder="user name" autocomplete="off">
+                    <mat-error>{{userMessage}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input formControlName="email" matInput placeholder="email" type="email" autocomplete="off">
+                    <mat-error>{{emailMessage}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input formControlName="mobile" matInput placeholder="mobile number" type="tel" autocomplete="off">
+                    <mat-error>{{mobileMessage}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input formControlName="password" matInput placeholder="password" type="password" autocomplete="off">
+                    <mat-error>{{passwordMessage}}</mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input formControlName="rePassword" matInput placeholder="re enter password" type="password" autocomplete="off">
+                    <mat-error>{{rePasswordMessage}}</mat-error>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="accent" type="submit" [disabled]="!registerForm.valid">Register</button>
+            <button mat-raised-button color="accent" type="button">Cancel</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

@@ -1,0 +1,17 @@
+.outer
+{
+ float: right;;
+}
+.inner
+{
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+mat-card-content{
+    height: 90px;
+}
+
+.mat-dialog-container{
+padding: 0px;
+}

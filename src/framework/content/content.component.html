@@ -1,0 +1,18 @@
+<mat-drawer-container  [hasBackdrop]="true" class="container">
+    <mat-drawer #drawer mode="over" autoFocus = "false"   >
+      
+        <mat-card   mat-ripple>
+          <mat-card-title>Wallet</mat-card-title>
+      <mat-card-subtitle>Current Balancde : 150.00</mat-card-subtitle>
+      <mat-card-content>This is content</mat-card-content>
+
+        </mat-card>
+
+      </mat-drawer>
+
+      <router-outlet fxFill>
+
+      </router-outlet>
+   
+  </mat-drawer-container>
+  

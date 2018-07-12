@@ -1,0 +1,32 @@
+ 
+
+   
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+            <div>
+                <mat-form-field>
+                    <input formControlName="userName" matInput placeholder="user name" autocomplete="off">
+                    <mat-error>{{userMessage}}</mat-error>
+                </mat-form-field>
+            </div>
+           <div>
+            <mat-form-field>
+                <input formControlName="password" matInput placeholder="password" type="password">
+                <mat-error>{{passwordMessage}}</mat-error>
+            </mat-form-field>
+        </div>
+
+        
+
+            <div class="outer">
+                <div class="inner"><button mat-raised-button color="accent" type="submit" [disabled]="!loginForm.valid">Login</button></div>
+                <div class="inner"><button mat-raised-button color="accent" type="button"  (click)="clearValues()">Clear</button> </div>
+                <div class="inner"><button mat-raised-button color="accent" mat-dialog-close [disabled]="disableClose">Close</button></div>
+            </div> 
+
+ 
+              
+            
+
+        </form>
+ 

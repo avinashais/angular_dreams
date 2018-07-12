@@ -1,0 +1,25 @@
+header {
+    background-color:royalblue;
+    height: 70px;
+    width: 100%;
+  
+  }
+
+ 
+a {
+     cursor: pointer;
+     color: white;
+}
+a:hover {
+    color:#fca;
+    background-color: brown;
+}
+
+.account{
+    color: white;
+    font-size: large;
+}
+
+
+
+

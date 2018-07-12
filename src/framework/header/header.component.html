@@ -1,0 +1,36 @@
+<header fxLayout="column">
+    <div fxLayout="row" fxFlex="20%">
+        <angular-loader></angular-loader>
+    </div>
+    <div fxLayout="row" fxFlex>
+        <div fxLayout="row" fxFlex>
+            <div fxLayout="row" fxFlex="5%">
+                <button mat-icon-button (click)="toggleDrawer()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <div fxLayout="row" fxFlex>
+                <fw-menu>
+                </fw-menu>
+            </div>
+            <div fxLayout="row" fxFlex="10%">
+                <button mat-button [matMenuTriggerFor]="menu" class="account">Account</button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item routerLink='/register'>
+                        <mat-icon>notifications_off</mat-icon>
+                        <span>Register</span>
+                    </button>
+                    <button mat-menu-item  (click)="openDialog()"> <mat-icon>notifications_off</mat-icon>
+                        <span>Login</span></button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<div id="button">
+        <a  (click)="openDialog()">Log In</a>
+      </div>

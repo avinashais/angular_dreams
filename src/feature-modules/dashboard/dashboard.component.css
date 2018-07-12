@@ -1,0 +1,16 @@
+header {
+  background-color: tan;
+  height: 60px;
+  width: 100%;
+}
+
+ .color1{
+  background-color: red;
+}
+.color2{
+  background-color: green;
+}
+
+.color3{
+  background-color: yellow;
+}

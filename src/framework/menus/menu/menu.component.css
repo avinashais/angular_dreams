@@ -1,0 +1,14 @@
+mat-toolbar{
+    min-height:40px;
+    height:40px;
+    background-color: royalblue;
+}  
+
+
+button{
+    color: white;
+    font-size: large;
+}
+
+
+ 
